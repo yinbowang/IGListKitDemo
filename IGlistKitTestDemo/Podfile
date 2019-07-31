@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'IGlistKitTestDemo' do
+  pod 'FLEX', '~> 2.4.0', :configurations => ['Debug']
+  pod 'Masonry', '~> 1.1.0'
+  pod 'IGListKit'
+end
