@@ -15,6 +15,7 @@
 		110FB81822EFDF9A0066CD3B /* IGlistKitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB81722EFDF9A0066CD3B /* IGlistKitTestDemoTests.m */; };
 		110FB82322EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB82222EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m */; };
 		11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11768BD92302640600E1107C /* DemoMainViewController.m */; };
+		11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11768BDF23026E9D00E1107C /* DemoSectionModel.m */; };
 		89EA30555AA50E4159248F63 /* libPods-IGlistKitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		110FB82422EFDF9A0066CD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11768BD82302640600E1107C /* DemoMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoMainViewController.h; sourceTree = "<group>"; };
 		11768BD92302640600E1107C /* DemoMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoMainViewController.m; sourceTree = "<group>"; };
+		11768BDE23026E9D00E1107C /* DemoSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSectionModel.h; sourceTree = "<group>"; };
+		11768BDF23026E9D00E1107C /* DemoSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoSectionModel.m; sourceTree = "<group>"; };
 		204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGlistKitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9688FB3679397D20BFE65E1 /* Pods-IGlistKitTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA50CECEF36DE3BDC2BE84A9 /* Pods-IGlistKitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.release.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
 				11768BD82302640600E1107C /* DemoMainViewController.h */,
 				11768BD92302640600E1107C /* DemoMainViewController.m */,
+				11768BDE23026E9D00E1107C /* DemoSectionModel.h */,
+				11768BDF23026E9D00E1107C /* DemoSectionModel.m */,
 				110FB80422EFDF980066CD3B /* Main.storyboard */,
 				110FB80722EFDF9A0066CD3B /* Assets.xcassets */,
 				110FB80922EFDF9A0066CD3B /* LaunchScreen.storyboard */,
@@ -312,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */,
 				11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */,
 				110FB80E22EFDF9A0066CD3B /* main.m in Sources */,
 				110FB80022EFDF980066CD3B /* AppDelegate.m in Sources */,
