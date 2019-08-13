@@ -14,7 +14,7 @@
 		110FB80E22EFDF9A0066CD3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB80D22EFDF9A0066CD3B /* main.m */; };
 		110FB81822EFDF9A0066CD3B /* IGlistKitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB81722EFDF9A0066CD3B /* IGlistKitTestDemoTests.m */; };
 		110FB82322EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB82222EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m */; };
-		110FB83222EFE0FA0066CD3B /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB83122EFE0FA0066CD3B /* MainTableViewController.m */; };
+		11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11768BD92302640600E1107C /* DemoMainViewController.m */; };
 		89EA30555AA50E4159248F63 /* libPods-IGlistKitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +50,8 @@
 		110FB81E22EFDF9A0066CD3B /* IGlistKitTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGlistKitTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		110FB82222EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGlistKitTestDemoUITests.m; sourceTree = "<group>"; };
 		110FB82422EFDF9A0066CD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		110FB83022EFE0FA0066CD3B /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
-		110FB83122EFE0FA0066CD3B /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		11768BD82302640600E1107C /* DemoMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoMainViewController.h; sourceTree = "<group>"; };
+		11768BD92302640600E1107C /* DemoMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoMainViewController.m; sourceTree = "<group>"; };
 		204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGlistKitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9688FB3679397D20BFE65E1 /* Pods-IGlistKitTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA50CECEF36DE3BDC2BE84A9 /* Pods-IGlistKitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.release.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 			children = (
 				110FB7FE22EFDF980066CD3B /* AppDelegate.h */,
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
-				110FB83022EFE0FA0066CD3B /* MainTableViewController.h */,
-				110FB83122EFE0FA0066CD3B /* MainTableViewController.m */,
+				11768BD82302640600E1107C /* DemoMainViewController.h */,
+				11768BD92302640600E1107C /* DemoMainViewController.m */,
 				110FB80422EFDF980066CD3B /* Main.storyboard */,
 				110FB80722EFDF9A0066CD3B /* Assets.xcassets */,
 				110FB80922EFDF9A0066CD3B /* LaunchScreen.storyboard */,
@@ -312,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				110FB83222EFE0FA0066CD3B /* MainTableViewController.m in Sources */,
+				11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */,
 				110FB80E22EFDF9A0066CD3B /* main.m in Sources */,
 				110FB80022EFDF980066CD3B /* AppDelegate.m in Sources */,
 			);

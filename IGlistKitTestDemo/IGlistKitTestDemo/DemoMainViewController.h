@@ -1,8 +1,8 @@
 //
-//  MainTableViewController.h
+//  DemoMainViewController.h
 //  IGlistKitTestDemo
 //
-//  Created by wyb on 2019/7/30.
+//  Created by wyb on 2019/8/13.
 //  Copyright © 2019 世纪佳缘. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainTableViewController : UITableViewController
+@interface DemoMainViewController : UIViewController
 
 @end
 
