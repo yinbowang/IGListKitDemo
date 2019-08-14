@@ -7,10 +7,13 @@
 //
 
 #import "IGListSectionController.h"
+#import "DemoSectionModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DemoSectionController : IGListSectionController
+
+@property (nonatomic,strong) DemoSectionModel *model;
 
 @end
 

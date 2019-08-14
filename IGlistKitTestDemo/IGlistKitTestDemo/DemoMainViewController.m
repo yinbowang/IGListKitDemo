@@ -27,7 +27,7 @@
     
     self.title = @"Demos";
     
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:self.collectionView];
     
     IGListAdapterUpdater *adapterUpdater = [[IGListAdapterUpdater alloc]init];
@@ -44,6 +44,8 @@
         sectionModel.sectionControllerClass = DemoSectionController.class;
         [self.dataArray addObject:sectionModel];
     }
+    
+    [self.adaper performUpdatesAnimated:YES completion:nil];
    
 }
 
@@ -56,7 +58,7 @@
     if (_collectionView == nil) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        _collectionView.backgroundColor = [UIColor greenColor];
+        _collectionView.backgroundColor = [UIColor whiteColor];
     }
     return _collectionView;
 }

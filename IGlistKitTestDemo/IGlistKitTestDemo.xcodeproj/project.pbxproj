@@ -17,6 +17,7 @@
 		112E7DB02303F31900E47B54 /* DemoSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DAF2303F31900E47B54 /* DemoSectionController.m */; };
 		112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DB423040C0600E47B54 /* BaseCollectionViewController.m */; };
 		112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DBA23040EDC00E47B54 /* LoadMoreViewController.m */; };
+		112E7DBF2304132D00E47B54 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DBE2304132D00E47B54 /* DemoCell.m */; };
 		11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11768BD92302640600E1107C /* DemoMainViewController.m */; };
 		11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11768BDF23026E9D00E1107C /* DemoSectionModel.m */; };
 		89EA30555AA50E4159248F63 /* libPods-IGlistKitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */; };
@@ -60,6 +61,8 @@
 		112E7DB423040C0600E47B54 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
 		112E7DB923040EDC00E47B54 /* LoadMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMoreViewController.h; sourceTree = "<group>"; };
 		112E7DBA23040EDC00E47B54 /* LoadMoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMoreViewController.m; sourceTree = "<group>"; };
+		112E7DBD2304132D00E47B54 /* DemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
+		112E7DBE2304132D00E47B54 /* DemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
 		11768BD82302640600E1107C /* DemoMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoMainViewController.h; sourceTree = "<group>"; };
 		11768BD92302640600E1107C /* DemoMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoMainViewController.m; sourceTree = "<group>"; };
 		11768BDE23026E9D00E1107C /* DemoSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSectionModel.h; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
 				11768BD82302640600E1107C /* DemoMainViewController.h */,
 				11768BD92302640600E1107C /* DemoMainViewController.m */,
+				112E7DBC2304130700E47B54 /* views */,
 				112E7DB823040E9200E47B54 /* sectionController */,
 				112E7DB723040E8500E47B54 /* sectionModel */,
 				112E7DB623040E7200E47B54 /* vc */,
@@ -189,6 +193,15 @@
 				112E7DAF2303F31900E47B54 /* DemoSectionController.m */,
 			);
 			path = sectionController;
+			sourceTree = "<group>";
+		};
+		112E7DBC2304130700E47B54 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				112E7DBD2304132D00E47B54 /* DemoCell.h */,
+				112E7DBE2304132D00E47B54 /* DemoCell.m */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		84D8E9D15AD44E652E404527 /* Pods */ = {
@@ -366,6 +379,7 @@
 			files = (
 				11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */,
 				112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */,
+				112E7DBF2304132D00E47B54 /* DemoCell.m in Sources */,
 				112E7DB02303F31900E47B54 /* DemoSectionController.m in Sources */,
 				112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */,
 				11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */,
