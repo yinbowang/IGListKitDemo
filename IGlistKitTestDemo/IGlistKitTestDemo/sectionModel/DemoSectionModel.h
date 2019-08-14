@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DemoSectionModel : NSObject
 
+@property (nonatomic,copy) NSString *name;
+@property (nonatomic,strong) Class pushControllerClass;
+@property (nonatomic,strong) Class sectionControllerClass;
+
 @end
 
 NS_ASSUME_NONNULL_END

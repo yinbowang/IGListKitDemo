@@ -14,6 +14,9 @@
 		110FB80E22EFDF9A0066CD3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB80D22EFDF9A0066CD3B /* main.m */; };
 		110FB81822EFDF9A0066CD3B /* IGlistKitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB81722EFDF9A0066CD3B /* IGlistKitTestDemoTests.m */; };
 		110FB82322EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB82222EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m */; };
+		112E7DB02303F31900E47B54 /* DemoSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DAF2303F31900E47B54 /* DemoSectionController.m */; };
+		112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DB423040C0600E47B54 /* BaseCollectionViewController.m */; };
+		112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DBA23040EDC00E47B54 /* LoadMoreViewController.m */; };
 		11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11768BD92302640600E1107C /* DemoMainViewController.m */; };
 		11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11768BDF23026E9D00E1107C /* DemoSectionModel.m */; };
 		89EA30555AA50E4159248F63 /* libPods-IGlistKitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */; };
@@ -51,6 +54,12 @@
 		110FB81E22EFDF9A0066CD3B /* IGlistKitTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGlistKitTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		110FB82222EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGlistKitTestDemoUITests.m; sourceTree = "<group>"; };
 		110FB82422EFDF9A0066CD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112E7DAE2303F31900E47B54 /* DemoSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSectionController.h; sourceTree = "<group>"; };
+		112E7DAF2303F31900E47B54 /* DemoSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoSectionController.m; sourceTree = "<group>"; };
+		112E7DB323040C0600E47B54 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
+		112E7DB423040C0600E47B54 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
+		112E7DB923040EDC00E47B54 /* LoadMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMoreViewController.h; sourceTree = "<group>"; };
+		112E7DBA23040EDC00E47B54 /* LoadMoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMoreViewController.m; sourceTree = "<group>"; };
 		11768BD82302640600E1107C /* DemoMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoMainViewController.h; sourceTree = "<group>"; };
 		11768BD92302640600E1107C /* DemoMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoMainViewController.m; sourceTree = "<group>"; };
 		11768BDE23026E9D00E1107C /* DemoSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSectionModel.h; sourceTree = "<group>"; };
@@ -115,8 +124,10 @@
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
 				11768BD82302640600E1107C /* DemoMainViewController.h */,
 				11768BD92302640600E1107C /* DemoMainViewController.m */,
-				11768BDE23026E9D00E1107C /* DemoSectionModel.h */,
-				11768BDF23026E9D00E1107C /* DemoSectionModel.m */,
+				112E7DB823040E9200E47B54 /* sectionController */,
+				112E7DB723040E8500E47B54 /* sectionModel */,
+				112E7DB623040E7200E47B54 /* vc */,
+				112E7DB223040BDB00E47B54 /* basevc */,
 				110FB80422EFDF980066CD3B /* Main.storyboard */,
 				110FB80722EFDF9A0066CD3B /* Assets.xcassets */,
 				110FB80922EFDF9A0066CD3B /* LaunchScreen.storyboard */,
@@ -142,6 +153,42 @@
 				110FB82422EFDF9A0066CD3B /* Info.plist */,
 			);
 			path = IGlistKitTestDemoUITests;
+			sourceTree = "<group>";
+		};
+		112E7DB223040BDB00E47B54 /* basevc */ = {
+			isa = PBXGroup;
+			children = (
+				112E7DB323040C0600E47B54 /* BaseCollectionViewController.h */,
+				112E7DB423040C0600E47B54 /* BaseCollectionViewController.m */,
+			);
+			path = basevc;
+			sourceTree = "<group>";
+		};
+		112E7DB623040E7200E47B54 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				112E7DB923040EDC00E47B54 /* LoadMoreViewController.h */,
+				112E7DBA23040EDC00E47B54 /* LoadMoreViewController.m */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		112E7DB723040E8500E47B54 /* sectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				11768BDE23026E9D00E1107C /* DemoSectionModel.h */,
+				11768BDF23026E9D00E1107C /* DemoSectionModel.m */,
+			);
+			path = sectionModel;
+			sourceTree = "<group>";
+		};
+		112E7DB823040E9200E47B54 /* sectionController */ = {
+			isa = PBXGroup;
+			children = (
+				112E7DAE2303F31900E47B54 /* DemoSectionController.h */,
+				112E7DAF2303F31900E47B54 /* DemoSectionController.m */,
+			);
+			path = sectionController;
 			sourceTree = "<group>";
 		};
 		84D8E9D15AD44E652E404527 /* Pods */ = {
@@ -318,6 +365,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */,
+				112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */,
+				112E7DB02303F31900E47B54 /* DemoSectionController.m in Sources */,
+				112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */,
 				11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */,
 				110FB80E22EFDF9A0066CD3B /* main.m in Sources */,
 				110FB80022EFDF980066CD3B /* AppDelegate.m in Sources */,
