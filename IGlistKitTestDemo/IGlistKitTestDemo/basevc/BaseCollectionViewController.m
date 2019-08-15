@@ -19,6 +19,9 @@
     
     [self.view addSubview:self.collectionView];
     
+    IGListAdapterUpdater *updater = [[IGListAdapterUpdater alloc]init];
+    self.adapter = [[IGListAdapter alloc]initWithUpdater:updater viewController:self];
+    self.adapter.collectionView = self.collectionView;
     
 }
 

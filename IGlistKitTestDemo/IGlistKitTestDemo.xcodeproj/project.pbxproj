@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1100182D2305669D00FCD4D5 /* LabelSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100182C2305669D00FCD4D5 /* LabelSectionController.m */; };
+		1100183023056D1600FCD4D5 /* LoadMoreFooterSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100182F23056D1600FCD4D5 /* LoadMoreFooterSectionController.m */; };
+		1100183323056DE200FCD4D5 /* LoadMoreFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100183223056DE200FCD4D5 /* LoadMoreFooterCell.m */; };
+		11001836230570C200FCD4D5 /* NSArray+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001835230570C200FCD4D5 /* NSArray+Number.m */; };
 		110FB80022EFDF980066CD3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB7FF22EFDF980066CD3B /* AppDelegate.m */; };
 		110FB80622EFDF980066CD3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110FB80422EFDF980066CD3B /* Main.storyboard */; };
 		110FB80822EFDF9A0066CD3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110FB80722EFDF9A0066CD3B /* Assets.xcassets */; };
@@ -41,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1100182B2305669D00FCD4D5 /* LabelSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelSectionController.h; sourceTree = "<group>"; };
+		1100182C2305669D00FCD4D5 /* LabelSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelSectionController.m; sourceTree = "<group>"; };
+		1100182E23056D1600FCD4D5 /* LoadMoreFooterSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMoreFooterSectionController.h; sourceTree = "<group>"; };
+		1100182F23056D1600FCD4D5 /* LoadMoreFooterSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMoreFooterSectionController.m; sourceTree = "<group>"; };
+		1100183123056DE200FCD4D5 /* LoadMoreFooterCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMoreFooterCell.h; sourceTree = "<group>"; };
+		1100183223056DE200FCD4D5 /* LoadMoreFooterCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMoreFooterCell.m; sourceTree = "<group>"; };
+		11001834230570C200FCD4D5 /* NSArray+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Number.h"; sourceTree = "<group>"; };
+		11001835230570C200FCD4D5 /* NSArray+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Number.m"; sourceTree = "<group>"; };
 		110FB7FB22EFDF980066CD3B /* IGlistKitTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGlistKitTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		110FB7FE22EFDF980066CD3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		110FB7FF22EFDF980066CD3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +137,8 @@
 			children = (
 				110FB7FE22EFDF980066CD3B /* AppDelegate.h */,
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
+				11001834230570C200FCD4D5 /* NSArray+Number.h */,
+				11001835230570C200FCD4D5 /* NSArray+Number.m */,
 				11768BD82302640600E1107C /* DemoMainViewController.h */,
 				11768BD92302640600E1107C /* DemoMainViewController.m */,
 				112E7DBC2304130700E47B54 /* views */,
@@ -191,6 +205,10 @@
 			children = (
 				112E7DAE2303F31900E47B54 /* DemoSectionController.h */,
 				112E7DAF2303F31900E47B54 /* DemoSectionController.m */,
+				1100182B2305669D00FCD4D5 /* LabelSectionController.h */,
+				1100182C2305669D00FCD4D5 /* LabelSectionController.m */,
+				1100182E23056D1600FCD4D5 /* LoadMoreFooterSectionController.h */,
+				1100182F23056D1600FCD4D5 /* LoadMoreFooterSectionController.m */,
 			);
 			path = sectionController;
 			sourceTree = "<group>";
@@ -200,6 +218,8 @@
 			children = (
 				112E7DBD2304132D00E47B54 /* DemoCell.h */,
 				112E7DBE2304132D00E47B54 /* DemoCell.m */,
+				1100183123056DE200FCD4D5 /* LoadMoreFooterCell.h */,
+				1100183223056DE200FCD4D5 /* LoadMoreFooterCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -377,10 +397,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1100183323056DE200FCD4D5 /* LoadMoreFooterCell.m in Sources */,
 				11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */,
 				112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */,
 				112E7DBF2304132D00E47B54 /* DemoCell.m in Sources */,
 				112E7DB02303F31900E47B54 /* DemoSectionController.m in Sources */,
+				1100182D2305669D00FCD4D5 /* LabelSectionController.m in Sources */,
+				1100183023056D1600FCD4D5 /* LoadMoreFooterSectionController.m in Sources */,
+				11001836230570C200FCD4D5 /* NSArray+Number.m in Sources */,
 				112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */,
 				11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */,
 				110FB80E22EFDF9A0066CD3B /* main.m in Sources */,
