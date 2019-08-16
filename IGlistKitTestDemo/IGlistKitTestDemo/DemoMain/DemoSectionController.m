@@ -31,6 +31,7 @@
 
 - (void)didSelectItemAtIndex:(NSInteger)index{
     UIViewController *vc = [self.model.pushControllerClass new];
+    vc.navigationItem.title = self.model.name;
     [self.viewController.navigationController pushViewController:vc animated:YES];
 }
 

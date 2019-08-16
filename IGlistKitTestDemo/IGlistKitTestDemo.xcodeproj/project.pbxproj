@@ -35,6 +35,10 @@
 		117855E12306A1E300479305 /* UserSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855E02306A1E300479305 /* UserSectionController.m */; };
 		117855E42306A34B00479305 /* CenterLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855E32306A34B00479305 /* CenterLabelCell.m */; };
 		117855E72306A42B00479305 /* DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855E62306A42B00479305 /* DetailLabelCell.m */; };
+		117855EB2306A99F00479305 /* NestedAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855EA2306A99F00479305 /* NestedAdapterViewController.m */; };
+		117855EE2306AA1F00479305 /* HorizontalSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855ED2306AA1F00479305 /* HorizontalSectionController.m */; };
+		117855F12306AB1200479305 /* EmbeddedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855F02306AB1200479305 /* EmbeddedCollectionViewCell.m */; };
+		117855F42306AB2800479305 /* EmbeddedSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855F32306AB2800479305 /* EmbeddedSectionController.m */; };
 		89EA30555AA50E4159248F63 /* libPods-IGlistKitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +116,14 @@
 		117855E32306A34B00479305 /* CenterLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterLabelCell.m; sourceTree = "<group>"; };
 		117855E52306A42B00479305 /* DetailLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailLabelCell.h; sourceTree = "<group>"; };
 		117855E62306A42B00479305 /* DetailLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailLabelCell.m; sourceTree = "<group>"; };
+		117855E92306A99F00479305 /* NestedAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedAdapterViewController.h; sourceTree = "<group>"; };
+		117855EA2306A99F00479305 /* NestedAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestedAdapterViewController.m; sourceTree = "<group>"; };
+		117855EC2306AA1F00479305 /* HorizontalSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalSectionController.h; sourceTree = "<group>"; };
+		117855ED2306AA1F00479305 /* HorizontalSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalSectionController.m; sourceTree = "<group>"; };
+		117855EF2306AB1200479305 /* EmbeddedCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbeddedCollectionViewCell.h; sourceTree = "<group>"; };
+		117855F02306AB1200479305 /* EmbeddedCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedCollectionViewCell.m; sourceTree = "<group>"; };
+		117855F22306AB2800479305 /* EmbeddedSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbeddedSectionController.h; sourceTree = "<group>"; };
+		117855F32306AB2800479305 /* EmbeddedSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedSectionController.m; sourceTree = "<group>"; };
 		204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGlistKitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9688FB3679397D20BFE65E1 /* Pods-IGlistKitTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA50CECEF36DE3BDC2BE84A9 /* Pods-IGlistKitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.release.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +183,7 @@
 			children = (
 				110FB7FE22EFDF980066CD3B /* AppDelegate.h */,
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
+				117855E82306A98B00479305 /* 嵌套的适配器 */,
 				117855CF23069AEF00479305 /* 混合数据 */,
 				117855CC23064D7100479305 /* DemoMain */,
 				117855CD23064DBA00479305 /* 尾部加载 */,
@@ -285,6 +298,21 @@
 				117855E62306A42B00479305 /* DetailLabelCell.m */,
 			);
 			path = "混合数据";
+			sourceTree = "<group>";
+		};
+		117855E82306A98B00479305 /* 嵌套的适配器 */ = {
+			isa = PBXGroup;
+			children = (
+				117855E92306A99F00479305 /* NestedAdapterViewController.h */,
+				117855EA2306A99F00479305 /* NestedAdapterViewController.m */,
+				117855EC2306AA1F00479305 /* HorizontalSectionController.h */,
+				117855ED2306AA1F00479305 /* HorizontalSectionController.m */,
+				117855EF2306AB1200479305 /* EmbeddedCollectionViewCell.h */,
+				117855F02306AB1200479305 /* EmbeddedCollectionViewCell.m */,
+				117855F22306AB2800479305 /* EmbeddedSectionController.h */,
+				117855F32306AB2800479305 /* EmbeddedSectionController.m */,
+			);
+			path = "嵌套的适配器";
 			sourceTree = "<group>";
 		};
 		84D8E9D15AD44E652E404527 /* Pods */ = {
@@ -460,9 +488,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117855F42306AB2800479305 /* EmbeddedSectionController.m in Sources */,
 				1100183323056DE200FCD4D5 /* LoadMoreFooterCell.m in Sources */,
 				117855C42306447900479305 /* SearchViewController.m in Sources */,
 				117855D823069DF600479305 /* User.m in Sources */,
+				117855EE2306AA1F00479305 /* HorizontalSectionController.m in Sources */,
+				117855F12306AB1200479305 /* EmbeddedCollectionViewCell.m in Sources */,
+				117855EB2306A99F00479305 /* NestedAdapterViewController.m in Sources */,
 				11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */,
 				112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */,
 				117855D223069B1800479305 /* MixedDataViewController.m in Sources */,
