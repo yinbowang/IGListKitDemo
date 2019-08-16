@@ -42,6 +42,9 @@
 		117855F82306AF4600479305 /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855F72306AF4600479305 /* EmptyViewController.m */; };
 		117855FB2306AFCF00479305 /* RemoveSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855FA2306AFCF00479305 /* RemoveSectionController.m */; };
 		117855FE2306B00B00479305 /* RemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855FD2306B00B00479305 /* RemoveCell.m */; };
+		117856022306B44A00479305 /* SingleSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117856012306B44A00479305 /* SingleSectionViewController.m */; };
+		117856062306B4BF00479305 /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117856032306B4BF00479305 /* NibCell.xib */; };
+		117856072306B4BF00479305 /* NibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117856052306B4BF00479305 /* NibCell.m */; };
 		89EA30555AA50E4159248F63 /* libPods-IGlistKitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +136,11 @@
 		117855FA2306AFCF00479305 /* RemoveSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveSectionController.m; sourceTree = "<group>"; };
 		117855FC2306B00B00479305 /* RemoveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveCell.h; sourceTree = "<group>"; };
 		117855FD2306B00B00479305 /* RemoveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveCell.m; sourceTree = "<group>"; };
+		117856002306B44A00479305 /* SingleSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleSectionViewController.h; sourceTree = "<group>"; };
+		117856012306B44A00479305 /* SingleSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleSectionViewController.m; sourceTree = "<group>"; };
+		117856032306B4BF00479305 /* NibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
+		117856042306B4BF00479305 /* NibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibCell.h; sourceTree = "<group>"; };
+		117856052306B4BF00479305 /* NibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibCell.m; sourceTree = "<group>"; };
 		204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGlistKitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9688FB3679397D20BFE65E1 /* Pods-IGlistKitTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA50CECEF36DE3BDC2BE84A9 /* Pods-IGlistKitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.release.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +200,7 @@
 			children = (
 				110FB7FE22EFDF980066CD3B /* AppDelegate.h */,
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
+				117855FF2306B43400479305 /* 单节控制器 */,
 				117855F52306AF2D00479305 /* 空视图 */,
 				117855E82306A98B00479305 /* 嵌套的适配器 */,
 				117855CF23069AEF00479305 /* 混合数据 */,
@@ -338,6 +347,18 @@
 			path = "空视图";
 			sourceTree = "<group>";
 		};
+		117855FF2306B43400479305 /* 单节控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				117856042306B4BF00479305 /* NibCell.h */,
+				117856052306B4BF00479305 /* NibCell.m */,
+				117856032306B4BF00479305 /* NibCell.xib */,
+				117856002306B44A00479305 /* SingleSectionViewController.h */,
+				117856012306B44A00479305 /* SingleSectionViewController.m */,
+			);
+			path = "单节控制器";
+			sourceTree = "<group>";
+		};
 		84D8E9D15AD44E652E404527 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				110FB80B22EFDF9A0066CD3B /* LaunchScreen.storyboard in Resources */,
+				117856062306B4BF00479305 /* NibCell.xib in Resources */,
 				110FB80822EFDF9A0066CD3B /* Assets.xcassets in Resources */,
 				110FB80622EFDF980066CD3B /* Main.storyboard in Resources */,
 			);
@@ -539,6 +561,8 @@
 				117855FE2306B00B00479305 /* RemoveCell.m in Sources */,
 				117855CA230647AE00479305 /* SearchCell.m in Sources */,
 				117855DB2306A1CC00479305 /* ExpandableSectionController.m in Sources */,
+				117856022306B44A00479305 /* SingleSectionViewController.m in Sources */,
+				117856072306B4BF00479305 /* NibCell.m in Sources */,
 				110FB80E22EFDF9A0066CD3B /* main.m in Sources */,
 				110FB80022EFDF980066CD3B /* AppDelegate.m in Sources */,
 			);
