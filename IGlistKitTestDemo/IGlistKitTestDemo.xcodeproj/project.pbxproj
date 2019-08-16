@@ -39,6 +39,9 @@
 		117855EE2306AA1F00479305 /* HorizontalSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855ED2306AA1F00479305 /* HorizontalSectionController.m */; };
 		117855F12306AB1200479305 /* EmbeddedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855F02306AB1200479305 /* EmbeddedCollectionViewCell.m */; };
 		117855F42306AB2800479305 /* EmbeddedSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855F32306AB2800479305 /* EmbeddedSectionController.m */; };
+		117855F82306AF4600479305 /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855F72306AF4600479305 /* EmptyViewController.m */; };
+		117855FB2306AFCF00479305 /* RemoveSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855FA2306AFCF00479305 /* RemoveSectionController.m */; };
+		117855FE2306B00B00479305 /* RemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855FD2306B00B00479305 /* RemoveCell.m */; };
 		89EA30555AA50E4159248F63 /* libPods-IGlistKitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +127,12 @@
 		117855F02306AB1200479305 /* EmbeddedCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedCollectionViewCell.m; sourceTree = "<group>"; };
 		117855F22306AB2800479305 /* EmbeddedSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbeddedSectionController.h; sourceTree = "<group>"; };
 		117855F32306AB2800479305 /* EmbeddedSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedSectionController.m; sourceTree = "<group>"; };
+		117855F62306AF4600479305 /* EmptyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
+		117855F72306AF4600479305 /* EmptyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
+		117855F92306AFCF00479305 /* RemoveSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveSectionController.h; sourceTree = "<group>"; };
+		117855FA2306AFCF00479305 /* RemoveSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveSectionController.m; sourceTree = "<group>"; };
+		117855FC2306B00B00479305 /* RemoveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveCell.h; sourceTree = "<group>"; };
+		117855FD2306B00B00479305 /* RemoveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveCell.m; sourceTree = "<group>"; };
 		204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGlistKitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9688FB3679397D20BFE65E1 /* Pods-IGlistKitTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA50CECEF36DE3BDC2BE84A9 /* Pods-IGlistKitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.release.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +192,7 @@
 			children = (
 				110FB7FE22EFDF980066CD3B /* AppDelegate.h */,
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
+				117855F52306AF2D00479305 /* 空视图 */,
 				117855E82306A98B00479305 /* 嵌套的适配器 */,
 				117855CF23069AEF00479305 /* 混合数据 */,
 				117855CC23064D7100479305 /* DemoMain */,
@@ -313,6 +323,19 @@
 				117855F32306AB2800479305 /* EmbeddedSectionController.m */,
 			);
 			path = "嵌套的适配器";
+			sourceTree = "<group>";
+		};
+		117855F52306AF2D00479305 /* 空视图 */ = {
+			isa = PBXGroup;
+			children = (
+				117855F62306AF4600479305 /* EmptyViewController.h */,
+				117855F72306AF4600479305 /* EmptyViewController.m */,
+				117855F92306AFCF00479305 /* RemoveSectionController.h */,
+				117855FA2306AFCF00479305 /* RemoveSectionController.m */,
+				117855FC2306B00B00479305 /* RemoveCell.h */,
+				117855FD2306B00B00479305 /* RemoveCell.m */,
+			);
+			path = "空视图";
 			sourceTree = "<group>";
 		};
 		84D8E9D15AD44E652E404527 /* Pods */ = {
@@ -496,6 +519,7 @@
 				117855F12306AB1200479305 /* EmbeddedCollectionViewCell.m in Sources */,
 				117855EB2306A99F00479305 /* NestedAdapterViewController.m in Sources */,
 				11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */,
+				117855FB2306AFCF00479305 /* RemoveSectionController.m in Sources */,
 				112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */,
 				117855D223069B1800479305 /* MixedDataViewController.m in Sources */,
 				117855C7230646D500479305 /* SearchSectionCotroller.m in Sources */,
@@ -506,11 +530,13 @@
 				117855E12306A1E300479305 /* UserSectionController.m in Sources */,
 				117855E72306A42B00479305 /* DetailLabelCell.m in Sources */,
 				1100183023056D1600FCD4D5 /* LoadMoreFooterSectionController.m in Sources */,
+				117855F82306AF4600479305 /* EmptyViewController.m in Sources */,
 				11001836230570C200FCD4D5 /* NSArray+Number.m in Sources */,
 				112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */,
 				11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */,
 				117855D523069DCE00479305 /* GridItem.m in Sources */,
 				117855E42306A34B00479305 /* CenterLabelCell.m in Sources */,
+				117855FE2306B00B00479305 /* RemoveCell.m in Sources */,
 				117855CA230647AE00479305 /* SearchCell.m in Sources */,
 				117855DB2306A1CC00479305 /* ExpandableSectionController.m in Sources */,
 				110FB80E22EFDF9A0066CD3B /* main.m in Sources */,
