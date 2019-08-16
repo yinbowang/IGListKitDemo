@@ -12,6 +12,7 @@
 #import "DemoSectionModel.h"
 #import "DemoSectionController.h"
 #import "SearchViewController.h"
+#import "MixedDataViewController.h"
 
 @interface DemoMainViewController ()<IGListAdapterDataSource>
 
@@ -36,8 +37,8 @@
     self.adaper.collectionView = self.collectionView;
     self.adaper.dataSource = self;
     
-    NSArray *pushControllerClassArray = @[LoadMoreViewController.class,SearchViewController.class];
-    NSArray *nameArray = @[@"尾部加载",@"自动搜索"];
+    NSArray *pushControllerClassArray = @[LoadMoreViewController.class,SearchViewController.class,MixedDataViewController.class];
+    NSArray *nameArray = @[@"尾部加载",@"自动搜索",@"混合数据"];
     for (NSInteger i=0; i<nameArray.count; i++) {
         DemoSectionModel *sectionModel = [[DemoSectionModel alloc]init];
         sectionModel.name = nameArray[i];

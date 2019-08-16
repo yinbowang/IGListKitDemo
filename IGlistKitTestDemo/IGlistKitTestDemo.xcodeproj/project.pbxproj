@@ -27,6 +27,14 @@
 		117855C42306447900479305 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855C32306447900479305 /* SearchViewController.m */; };
 		117855C7230646D500479305 /* SearchSectionCotroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855C6230646D500479305 /* SearchSectionCotroller.m */; };
 		117855CA230647AE00479305 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855C9230647AE00479305 /* SearchCell.m */; };
+		117855D223069B1800479305 /* MixedDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855D123069B1800479305 /* MixedDataViewController.m */; };
+		117855D523069DCE00479305 /* GridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855D423069DCE00479305 /* GridItem.m */; };
+		117855D823069DF600479305 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855D723069DF600479305 /* User.m */; };
+		117855DB2306A1CC00479305 /* ExpandableSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855DA2306A1CC00479305 /* ExpandableSectionController.m */; };
+		117855DE2306A1DB00479305 /* GridSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855DD2306A1DB00479305 /* GridSectionController.m */; };
+		117855E12306A1E300479305 /* UserSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855E02306A1E300479305 /* UserSectionController.m */; };
+		117855E42306A34B00479305 /* CenterLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855E32306A34B00479305 /* CenterLabelCell.m */; };
+		117855E72306A42B00479305 /* DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855E62306A42B00479305 /* DetailLabelCell.m */; };
 		89EA30555AA50E4159248F63 /* libPods-IGlistKitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +96,22 @@
 		117855C6230646D500479305 /* SearchSectionCotroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchSectionCotroller.m; sourceTree = "<group>"; };
 		117855C8230647AE00479305 /* SearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
 		117855C9230647AE00479305 /* SearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
+		117855D023069B1800479305 /* MixedDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixedDataViewController.h; sourceTree = "<group>"; };
+		117855D123069B1800479305 /* MixedDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixedDataViewController.m; sourceTree = "<group>"; };
+		117855D323069DCE00479305 /* GridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridItem.h; sourceTree = "<group>"; };
+		117855D423069DCE00479305 /* GridItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridItem.m; sourceTree = "<group>"; };
+		117855D623069DF600479305 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		117855D723069DF600479305 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		117855D92306A1CC00479305 /* ExpandableSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpandableSectionController.h; sourceTree = "<group>"; };
+		117855DA2306A1CC00479305 /* ExpandableSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandableSectionController.m; sourceTree = "<group>"; };
+		117855DC2306A1DB00479305 /* GridSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridSectionController.h; sourceTree = "<group>"; };
+		117855DD2306A1DB00479305 /* GridSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridSectionController.m; sourceTree = "<group>"; };
+		117855DF2306A1E300479305 /* UserSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSectionController.h; sourceTree = "<group>"; };
+		117855E02306A1E300479305 /* UserSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSectionController.m; sourceTree = "<group>"; };
+		117855E22306A34B00479305 /* CenterLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterLabelCell.h; sourceTree = "<group>"; };
+		117855E32306A34B00479305 /* CenterLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterLabelCell.m; sourceTree = "<group>"; };
+		117855E52306A42B00479305 /* DetailLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailLabelCell.h; sourceTree = "<group>"; };
+		117855E62306A42B00479305 /* DetailLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailLabelCell.m; sourceTree = "<group>"; };
 		204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGlistKitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9688FB3679397D20BFE65E1 /* Pods-IGlistKitTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA50CECEF36DE3BDC2BE84A9 /* Pods-IGlistKitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.release.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +171,7 @@
 			children = (
 				110FB7FE22EFDF980066CD3B /* AppDelegate.h */,
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
+				117855CF23069AEF00479305 /* 混合数据 */,
 				117855CC23064D7100479305 /* DemoMain */,
 				117855CD23064DBA00479305 /* 尾部加载 */,
 				117855CE23064E0300479305 /* 自动搜索 */,
@@ -237,6 +262,29 @@
 				117855C9230647AE00479305 /* SearchCell.m */,
 			);
 			path = "自动搜索";
+			sourceTree = "<group>";
+		};
+		117855CF23069AEF00479305 /* 混合数据 */ = {
+			isa = PBXGroup;
+			children = (
+				117855D023069B1800479305 /* MixedDataViewController.h */,
+				117855D123069B1800479305 /* MixedDataViewController.m */,
+				117855D323069DCE00479305 /* GridItem.h */,
+				117855D423069DCE00479305 /* GridItem.m */,
+				117855D623069DF600479305 /* User.h */,
+				117855D723069DF600479305 /* User.m */,
+				117855D92306A1CC00479305 /* ExpandableSectionController.h */,
+				117855DA2306A1CC00479305 /* ExpandableSectionController.m */,
+				117855DC2306A1DB00479305 /* GridSectionController.h */,
+				117855DD2306A1DB00479305 /* GridSectionController.m */,
+				117855DF2306A1E300479305 /* UserSectionController.h */,
+				117855E02306A1E300479305 /* UserSectionController.m */,
+				117855E22306A34B00479305 /* CenterLabelCell.h */,
+				117855E32306A34B00479305 /* CenterLabelCell.m */,
+				117855E52306A42B00479305 /* DetailLabelCell.h */,
+				117855E62306A42B00479305 /* DetailLabelCell.m */,
+			);
+			path = "混合数据";
 			sourceTree = "<group>";
 		};
 		84D8E9D15AD44E652E404527 /* Pods */ = {
@@ -414,17 +462,25 @@
 			files = (
 				1100183323056DE200FCD4D5 /* LoadMoreFooterCell.m in Sources */,
 				117855C42306447900479305 /* SearchViewController.m in Sources */,
+				117855D823069DF600479305 /* User.m in Sources */,
 				11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */,
 				112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */,
+				117855D223069B1800479305 /* MixedDataViewController.m in Sources */,
 				117855C7230646D500479305 /* SearchSectionCotroller.m in Sources */,
 				112E7DBF2304132D00E47B54 /* DemoCell.m in Sources */,
 				112E7DB02303F31900E47B54 /* DemoSectionController.m in Sources */,
+				117855DE2306A1DB00479305 /* GridSectionController.m in Sources */,
 				1100182D2305669D00FCD4D5 /* LabelSectionController.m in Sources */,
+				117855E12306A1E300479305 /* UserSectionController.m in Sources */,
+				117855E72306A42B00479305 /* DetailLabelCell.m in Sources */,
 				1100183023056D1600FCD4D5 /* LoadMoreFooterSectionController.m in Sources */,
 				11001836230570C200FCD4D5 /* NSArray+Number.m in Sources */,
 				112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */,
 				11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */,
+				117855D523069DCE00479305 /* GridItem.m in Sources */,
+				117855E42306A34B00479305 /* CenterLabelCell.m in Sources */,
 				117855CA230647AE00479305 /* SearchCell.m in Sources */,
+				117855DB2306A1CC00479305 /* ExpandableSectionController.m in Sources */,
 				110FB80E22EFDF9A0066CD3B /* main.m in Sources */,
 				110FB80022EFDF980066CD3B /* AppDelegate.m in Sources */,
 			);
