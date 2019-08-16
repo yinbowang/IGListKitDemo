@@ -24,6 +24,9 @@
 		112E7DBF2304132D00E47B54 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DBE2304132D00E47B54 /* DemoCell.m */; };
 		11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11768BD92302640600E1107C /* DemoMainViewController.m */; };
 		11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11768BDF23026E9D00E1107C /* DemoSectionModel.m */; };
+		117855C42306447900479305 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855C32306447900479305 /* SearchViewController.m */; };
+		117855C7230646D500479305 /* SearchSectionCotroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855C6230646D500479305 /* SearchSectionCotroller.m */; };
+		117855CA230647AE00479305 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117855C9230647AE00479305 /* SearchCell.m */; };
 		89EA30555AA50E4159248F63 /* libPods-IGlistKitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,12 @@
 		11768BD92302640600E1107C /* DemoMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoMainViewController.m; sourceTree = "<group>"; };
 		11768BDE23026E9D00E1107C /* DemoSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSectionModel.h; sourceTree = "<group>"; };
 		11768BDF23026E9D00E1107C /* DemoSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoSectionModel.m; sourceTree = "<group>"; };
+		117855C22306447900479305 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		117855C32306447900479305 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		117855C5230646D500479305 /* SearchSectionCotroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchSectionCotroller.h; sourceTree = "<group>"; };
+		117855C6230646D500479305 /* SearchSectionCotroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchSectionCotroller.m; sourceTree = "<group>"; };
+		117855C8230647AE00479305 /* SearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
+		117855C9230647AE00479305 /* SearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
 		204389AF321AE08D99A8715F /* libPods-IGlistKitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGlistKitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9688FB3679397D20BFE65E1 /* Pods-IGlistKitTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA50CECEF36DE3BDC2BE84A9 /* Pods-IGlistKitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGlistKitTestDemo.release.xcconfig"; path = "Target Support Files/Pods-IGlistKitTestDemo/Pods-IGlistKitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				110FB7FD22EFDF980066CD3B /* IGlistKitTestDemo */,
+				117855CB23064D4700479305 /* Category */,
 				110FB81622EFDF9A0066CD3B /* IGlistKitTestDemoTests */,
 				110FB82122EFDF9A0066CD3B /* IGlistKitTestDemoUITests */,
 				110FB7FC22EFDF980066CD3B /* Products */,
@@ -137,14 +147,9 @@
 			children = (
 				110FB7FE22EFDF980066CD3B /* AppDelegate.h */,
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
-				11001834230570C200FCD4D5 /* NSArray+Number.h */,
-				11001835230570C200FCD4D5 /* NSArray+Number.m */,
-				11768BD82302640600E1107C /* DemoMainViewController.h */,
-				11768BD92302640600E1107C /* DemoMainViewController.m */,
-				112E7DBC2304130700E47B54 /* views */,
-				112E7DB823040E9200E47B54 /* sectionController */,
-				112E7DB723040E8500E47B54 /* sectionModel */,
-				112E7DB623040E7200E47B54 /* vc */,
+				117855CC23064D7100479305 /* DemoMain */,
+				117855CD23064DBA00479305 /* 尾部加载 */,
+				117855CE23064E0300479305 /* 自动搜索 */,
 				112E7DB223040BDB00E47B54 /* basevc */,
 				110FB80422EFDF980066CD3B /* Main.storyboard */,
 				110FB80722EFDF9A0066CD3B /* Assets.xcassets */,
@@ -182,46 +187,56 @@
 			path = basevc;
 			sourceTree = "<group>";
 		};
-		112E7DB623040E7200E47B54 /* vc */ = {
+		117855CB23064D4700479305 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				11001834230570C200FCD4D5 /* NSArray+Number.h */,
+				11001835230570C200FCD4D5 /* NSArray+Number.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		117855CC23064D7100479305 /* DemoMain */ = {
+			isa = PBXGroup;
+			children = (
+				11768BD82302640600E1107C /* DemoMainViewController.h */,
+				11768BD92302640600E1107C /* DemoMainViewController.m */,
+				112E7DBD2304132D00E47B54 /* DemoCell.h */,
+				112E7DBE2304132D00E47B54 /* DemoCell.m */,
+				112E7DAE2303F31900E47B54 /* DemoSectionController.h */,
+				112E7DAF2303F31900E47B54 /* DemoSectionController.m */,
+				11768BDE23026E9D00E1107C /* DemoSectionModel.h */,
+				11768BDF23026E9D00E1107C /* DemoSectionModel.m */,
+			);
+			path = DemoMain;
+			sourceTree = "<group>";
+		};
+		117855CD23064DBA00479305 /* 尾部加载 */ = {
 			isa = PBXGroup;
 			children = (
 				112E7DB923040EDC00E47B54 /* LoadMoreViewController.h */,
 				112E7DBA23040EDC00E47B54 /* LoadMoreViewController.m */,
-			);
-			path = vc;
-			sourceTree = "<group>";
-		};
-		112E7DB723040E8500E47B54 /* sectionModel */ = {
-			isa = PBXGroup;
-			children = (
-				11768BDE23026E9D00E1107C /* DemoSectionModel.h */,
-				11768BDF23026E9D00E1107C /* DemoSectionModel.m */,
-			);
-			path = sectionModel;
-			sourceTree = "<group>";
-		};
-		112E7DB823040E9200E47B54 /* sectionController */ = {
-			isa = PBXGroup;
-			children = (
-				112E7DAE2303F31900E47B54 /* DemoSectionController.h */,
-				112E7DAF2303F31900E47B54 /* DemoSectionController.m */,
-				1100182B2305669D00FCD4D5 /* LabelSectionController.h */,
-				1100182C2305669D00FCD4D5 /* LabelSectionController.m */,
-				1100182E23056D1600FCD4D5 /* LoadMoreFooterSectionController.h */,
-				1100182F23056D1600FCD4D5 /* LoadMoreFooterSectionController.m */,
-			);
-			path = sectionController;
-			sourceTree = "<group>";
-		};
-		112E7DBC2304130700E47B54 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				112E7DBD2304132D00E47B54 /* DemoCell.h */,
-				112E7DBE2304132D00E47B54 /* DemoCell.m */,
 				1100183123056DE200FCD4D5 /* LoadMoreFooterCell.h */,
 				1100183223056DE200FCD4D5 /* LoadMoreFooterCell.m */,
+				1100182E23056D1600FCD4D5 /* LoadMoreFooterSectionController.h */,
+				1100182F23056D1600FCD4D5 /* LoadMoreFooterSectionController.m */,
+				1100182B2305669D00FCD4D5 /* LabelSectionController.h */,
+				1100182C2305669D00FCD4D5 /* LabelSectionController.m */,
 			);
-			path = views;
+			path = "尾部加载";
+			sourceTree = "<group>";
+		};
+		117855CE23064E0300479305 /* 自动搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				117855C22306447900479305 /* SearchViewController.h */,
+				117855C32306447900479305 /* SearchViewController.m */,
+				117855C5230646D500479305 /* SearchSectionCotroller.h */,
+				117855C6230646D500479305 /* SearchSectionCotroller.m */,
+				117855C8230647AE00479305 /* SearchCell.h */,
+				117855C9230647AE00479305 /* SearchCell.m */,
+			);
+			path = "自动搜索";
 			sourceTree = "<group>";
 		};
 		84D8E9D15AD44E652E404527 /* Pods */ = {
@@ -398,8 +413,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1100183323056DE200FCD4D5 /* LoadMoreFooterCell.m in Sources */,
+				117855C42306447900479305 /* SearchViewController.m in Sources */,
 				11768BE023026E9D00E1107C /* DemoSectionModel.m in Sources */,
 				112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */,
+				117855C7230646D500479305 /* SearchSectionCotroller.m in Sources */,
 				112E7DBF2304132D00E47B54 /* DemoCell.m in Sources */,
 				112E7DB02303F31900E47B54 /* DemoSectionController.m in Sources */,
 				1100182D2305669D00FCD4D5 /* LabelSectionController.m in Sources */,
@@ -407,6 +424,7 @@
 				11001836230570C200FCD4D5 /* NSArray+Number.m in Sources */,
 				112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */,
 				11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */,
+				117855CA230647AE00479305 /* SearchCell.m in Sources */,
 				110FB80E22EFDF9A0066CD3B /* main.m in Sources */,
 				110FB80022EFDF980066CD3B /* AppDelegate.m in Sources */,
 			);
