@@ -18,6 +18,11 @@
 		110FB80E22EFDF9A0066CD3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB80D22EFDF9A0066CD3B /* main.m */; };
 		110FB81822EFDF9A0066CD3B /* IGlistKitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB81722EFDF9A0066CD3B /* IGlistKitTestDemoTests.m */; };
 		110FB82322EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FB82222EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m */; };
+		111BFCBC230A448A000E787B /* SupplementaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BFCBB230A448A000E787B /* SupplementaryViewController.m */; };
+		111BFCBF230A4569000E787B /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BFCBE230A4569000E787B /* FeedItem.m */; };
+		111BFCC2230A45B3000E787B /* FeedItemSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BFCC1230A45B3000E787B /* FeedItemSectionController.m */; };
+		111BFCC6230A45FF000E787B /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111BFCC3230A45FF000E787B /* UserHeaderView.xib */; };
+		111BFCC7230A45FF000E787B /* UserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BFCC5230A45FF000E787B /* UserHeaderView.m */; };
 		112E7DB02303F31900E47B54 /* DemoSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DAF2303F31900E47B54 /* DemoSectionController.m */; };
 		112E7DB523040C0600E47B54 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DB423040C0600E47B54 /* BaseCollectionViewController.m */; };
 		112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E7DBA23040EDC00E47B54 /* LoadMoreViewController.m */; };
@@ -88,6 +93,15 @@
 		110FB81E22EFDF9A0066CD3B /* IGlistKitTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGlistKitTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		110FB82222EFDF9A0066CD3B /* IGlistKitTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGlistKitTestDemoUITests.m; sourceTree = "<group>"; };
 		110FB82422EFDF9A0066CD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		111BFCBA230A448A000E787B /* SupplementaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SupplementaryViewController.h; sourceTree = "<group>"; };
+		111BFCBB230A448A000E787B /* SupplementaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupplementaryViewController.m; sourceTree = "<group>"; };
+		111BFCBD230A4569000E787B /* FeedItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedItem.h; sourceTree = "<group>"; };
+		111BFCBE230A4569000E787B /* FeedItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
+		111BFCC0230A45B3000E787B /* FeedItemSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedItemSectionController.h; sourceTree = "<group>"; };
+		111BFCC1230A45B3000E787B /* FeedItemSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedItemSectionController.m; sourceTree = "<group>"; };
+		111BFCC3230A45FF000E787B /* UserHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
+		111BFCC4230A45FF000E787B /* UserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHeaderView.h; sourceTree = "<group>"; };
+		111BFCC5230A45FF000E787B /* UserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHeaderView.m; sourceTree = "<group>"; };
 		112E7DAE2303F31900E47B54 /* DemoSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSectionController.h; sourceTree = "<group>"; };
 		112E7DAF2303F31900E47B54 /* DemoSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoSectionController.m; sourceTree = "<group>"; };
 		112E7DB323040C0600E47B54 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
@@ -200,6 +214,7 @@
 			children = (
 				110FB7FE22EFDF980066CD3B /* AppDelegate.h */,
 				110FB7FF22EFDF980066CD3B /* AppDelegate.m */,
+				111BFCB9230A446B000E787B /* 补充视图 */,
 				117855FF2306B43400479305 /* 单节控制器 */,
 				117855F52306AF2D00479305 /* 空视图 */,
 				117855E82306A98B00479305 /* 嵌套的适配器 */,
@@ -233,6 +248,22 @@
 				110FB82422EFDF9A0066CD3B /* Info.plist */,
 			);
 			path = IGlistKitTestDemoUITests;
+			sourceTree = "<group>";
+		};
+		111BFCB9230A446B000E787B /* 补充视图 */ = {
+			isa = PBXGroup;
+			children = (
+				111BFCBA230A448A000E787B /* SupplementaryViewController.h */,
+				111BFCBB230A448A000E787B /* SupplementaryViewController.m */,
+				111BFCBD230A4569000E787B /* FeedItem.h */,
+				111BFCBE230A4569000E787B /* FeedItem.m */,
+				111BFCC0230A45B3000E787B /* FeedItemSectionController.h */,
+				111BFCC1230A45B3000E787B /* FeedItemSectionController.m */,
+				111BFCC4230A45FF000E787B /* UserHeaderView.h */,
+				111BFCC5230A45FF000E787B /* UserHeaderView.m */,
+				111BFCC3230A45FF000E787B /* UserHeaderView.xib */,
+			);
+			path = "补充视图";
 			sourceTree = "<group>";
 		};
 		112E7DB223040BDB00E47B54 /* basevc */ = {
@@ -480,6 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111BFCC6230A45FF000E787B /* UserHeaderView.xib in Resources */,
 				110FB80B22EFDF9A0066CD3B /* LaunchScreen.storyboard in Resources */,
 				117856062306B4BF00479305 /* NibCell.xib in Resources */,
 				110FB80822EFDF9A0066CD3B /* Assets.xcassets in Resources */,
@@ -535,6 +567,7 @@
 			files = (
 				117855F42306AB2800479305 /* EmbeddedSectionController.m in Sources */,
 				1100183323056DE200FCD4D5 /* LoadMoreFooterCell.m in Sources */,
+				111BFCC7230A45FF000E787B /* UserHeaderView.m in Sources */,
 				117855C42306447900479305 /* SearchViewController.m in Sources */,
 				117855D823069DF600479305 /* User.m in Sources */,
 				117855EE2306AA1F00479305 /* HorizontalSectionController.m in Sources */,
@@ -557,9 +590,12 @@
 				112E7DBB23040EDC00E47B54 /* LoadMoreViewController.m in Sources */,
 				11768BDA2302640600E1107C /* DemoMainViewController.m in Sources */,
 				117855D523069DCE00479305 /* GridItem.m in Sources */,
+				111BFCBC230A448A000E787B /* SupplementaryViewController.m in Sources */,
 				117855E42306A34B00479305 /* CenterLabelCell.m in Sources */,
 				117855FE2306B00B00479305 /* RemoveCell.m in Sources */,
 				117855CA230647AE00479305 /* SearchCell.m in Sources */,
+				111BFCC2230A45B3000E787B /* FeedItemSectionController.m in Sources */,
+				111BFCBF230A4569000E787B /* FeedItem.m in Sources */,
 				117855DB2306A1CC00479305 /* ExpandableSectionController.m in Sources */,
 				117856022306B44A00479305 /* SingleSectionViewController.m in Sources */,
 				117856072306B4BF00479305 /* NibCell.m in Sources */,

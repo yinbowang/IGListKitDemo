@@ -16,6 +16,7 @@
 #import "NestedAdapterViewController.h"
 #import "EmptyViewController.h"
 #import "SingleSectionViewController.h"
+#import "SupplementaryViewController.h"
 
 @interface DemoMainViewController ()<IGListAdapterDataSource>
 
@@ -40,9 +41,9 @@
     self.adaper.collectionView = self.collectionView;
     self.adaper.dataSource = self;
     
-    NSArray *pushControllerClassArray = @[LoadMoreViewController.class,SearchViewController.class,MixedDataViewController.class,NestedAdapterViewController.class,EmptyViewController.class,SingleSectionViewController.class];
+    NSArray *pushControllerClassArray = @[LoadMoreViewController.class,SearchViewController.class,MixedDataViewController.class,NestedAdapterViewController.class,EmptyViewController.class,SingleSectionViewController.class,SupplementaryViewController.class];
     
-    NSArray *nameArray = @[@"尾部加载",@"自动搜索",@"混合数据",@"嵌套的适配器",@"空视图",@"单节控制器"];
+    NSArray *nameArray = @[@"尾部加载",@"自动搜索",@"混合数据",@"嵌套的适配器",@"空视图",@"单节控制器",@"补充视图"];
     
     for (NSInteger i=0; i<nameArray.count; i++) {
         DemoSectionModel *sectionModel = [[DemoSectionModel alloc]init];

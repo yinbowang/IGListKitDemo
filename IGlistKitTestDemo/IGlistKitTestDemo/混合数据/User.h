@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *handle;
 
 - (instancetype)initWithPk:(NSInteger)pk name:(NSString *)name handle:(NSString *)handle;
++ (instancetype)userWithPk:(NSInteger)pk name:(NSString *)name handle:(NSString *)handle;
 
 @end
 
